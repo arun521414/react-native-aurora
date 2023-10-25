@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native"
 
-const padding_sizes = {
+const sizes = {
     xm : 4,
     sm : 6,
     md : 8,
@@ -8,7 +8,6 @@ const padding_sizes = {
     xl : 12,
     ul : 14,
 }
-
 
 const direction = {
     all    : 'a',
@@ -18,15 +17,21 @@ const direction = {
     bottom : 'b',
 }
 
-
 const generatePaddingStyles  = ()=>{
+    let paddings = {}
+    
+}
+
+const generateMarginStyles  = ()=>{
     let paddings = {}
     
 }
 
 
 const padding = StyleSheet.create(generatePaddingStyles())
+const margin  = StyleSheet.create(generateMarginStyles())
 
 export {
-    padding
+    padding,
+    margin
 }
