@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import spacing from './aurora-ui/styles/spacing';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-    
-    </View>
-  );
+  for(let i in spacing.padding){
+    console.log(i,spacing.padding[i])
+  }
+  for(let i in spacing.padding){
+    console.log(i,spacing.padding[i])
+  }
+  for(let i in spacing.margin){
+    console.log(i,spacing.margin[i])
+  }
 }
 
 const styles = StyleSheet.create({
